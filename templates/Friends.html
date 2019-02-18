@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_372de444aab84b1691725ed130e37a58 {
+    <style>#map_6a9bc055f37943a499aef4ee84a4c50d {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_372de444aab84b1691725ed130e37a58" ></div>
+    <div class="folium-map" id="map_6a9bc055f37943a499aef4ee84a4c50d" ></div>
 </body>
 <script>    
     
@@ -36,8 +36,8 @@
         var bounds = null;
     
 
-    var map_372de444aab84b1691725ed130e37a58 = L.map(
-        'map_372de444aab84b1691725ed130e37a58', {
+    var map_6a9bc055f37943a499aef4ee84a4c50d = L.map(
+        'map_6a9bc055f37943a499aef4ee84a4c50d', {
         center: [0, 0],
         zoom: 1,
         maxBounds: bounds,
@@ -49,7 +49,7 @@
 
     
     
-    var tile_layer_fe0711e68e954be8bc360faec425032c = L.tileLayer(
+    var tile_layer_7a5262893f88495f8ebab5cc476c0b03 = L.tileLayer(
         'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -61,23 +61,57 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_372de444aab84b1691725ed130e37a58);
+}).addTo(map_6a9bc055f37943a499aef4ee84a4c50d);
     
-            var feature_group_65d0643fd22c48ae865d6df31b653f41 = L.featureGroup(
-                ).addTo(map_372de444aab84b1691725ed130e37a58);
+            var feature_group_b61df4d68f374ec1a9547edd6d5ed54e = L.featureGroup(
+                ).addTo(map_6a9bc055f37943a499aef4ee84a4c50d);
         
     
-            var layer_control_f79db0b930114a30a452142a585dc5c2 = {
-                base_layers : { "mapboxbright" : tile_layer_fe0711e68e954be8bc360faec425032c, },
-                overlays : { "Centurion256`s friends" : feature_group_65d0643fd22c48ae865d6df31b653f41, }
+        var marker_c812952703584e84a4deecc7a393702f = L.marker(
+            [49.841952, 24.0315921],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_b61df4d68f374ec1a9547edd6d5ed54e);
+        
+    
+
+                var icon_a045b8e6b6694df492366e107c703910 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c812952703584e84a4deecc7a393702f.setIcon(icon_a045b8e6b6694df492366e107c703910);
+            
+    
+            var popup_77bbbbca464746e48ca81606ab903505 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3fb5bbced16c47a78373fc068d02a478 = $(`<div id="html_3fb5bbced16c47a78373fc068d02a478" style="width: 100.0%; height: 100.0%;">Mykola Morgunenko (myralllka) --- ZAXID.NET (ZaxidNet)</div>`)[0];
+                popup_77bbbbca464746e48ca81606ab903505.setContent(html_3fb5bbced16c47a78373fc068d02a478);
+            
+
+            marker_c812952703584e84a4deecc7a393702f.bindPopup(popup_77bbbbca464746e48ca81606ab903505)
+            ;
+
+            
+        
+    
+            var layer_control_77b33663e902457d8c396beb5acfbf4f = {
+                base_layers : { "mapboxbright" : tile_layer_7a5262893f88495f8ebab5cc476c0b03, },
+                overlays : { "YUmbrelluck`s friends" : feature_group_b61df4d68f374ec1a9547edd6d5ed54e, }
                 };
             L.control.layers(
-                layer_control_f79db0b930114a30a452142a585dc5c2.base_layers,
-                layer_control_f79db0b930114a30a452142a585dc5c2.overlays,
+                layer_control_77b33663e902457d8c396beb5acfbf4f.base_layers,
+                layer_control_77b33663e902457d8c396beb5acfbf4f.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_372de444aab84b1691725ed130e37a58);
+                }).addTo(map_6a9bc055f37943a499aef4ee84a4c50d);
             
         
 </script>

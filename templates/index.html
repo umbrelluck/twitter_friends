@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Enter Twitter usernames, splitted by space</h1>
+<form action="/" method="post">
+    <input name="acc" placeholder="Enter here Twitter usernames, splitted by space as <usrname1 usrname2 usrname3>" type="text"/>
+    <input type="submit" value="Search for friends"/>
+</form>
+{% endblock %}
